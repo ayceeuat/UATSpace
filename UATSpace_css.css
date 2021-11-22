@@ -1,0 +1,31 @@
+body {
+    background-image: url(spacehita.jpg);
+    background-color: black;
+    font-size: 2.1em;
+}
+
+h1 {
+    color:darkgrey;
+    text-align: center;
+    
+}
+
+h2{
+    text-align: center;
+    color: darkgrey;
+}
+
+#intro {
+    font-size: 1.0em;
+    color: darkred;
+}
+
+p {
+    text-align: center;
+    color: darkred;
+}
+
+#CountdownDisplay{
+    color: black;
+    text-align: center;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--Techno Wizardry produced/written by Alan B Campbell-->
+<!--01001111 01101101 01101110 01101001 01110011 01110011 01101001 01100001 
+    01101000 00100000 01100010 01100101 00100000 01110000 01110010 01100001 
+    01101001 01110011 01100101 00100001-->
+<html lang="en">
+    <!--The beginning of the style attempt.  Delete me if this doesn't work-->
+    <style>
+        .container{
+            text-align: center;
+            border:7px crimson;
+            width: 300px;
+            height: 200px;
+            padding-top: 100px;
+        }
+        #StartTheCountdown{
+            font-size: 50px;
+        }
+    </style>
+    <!--The end of the portion I need to delete if this fails miserably-->
+<head>
+    <link rel="stylesheet" href="UATSpace_css.css">
+    <title>UAT Space Race</title>
+    <script>
+        //This is the beginning of the StartTheCountdown call function
+        function StartTheCountdown()
+        {
+        //We are declaring the variables and their initial values
+        var countdown = 10;
+        var timeout = 10000;
+        //This is the start of the countdown count
+        //That being said I still don't understand why the final message on the top
+        //line is the "We have liftoff!" line because logical you would think that
+        //would be the first line displayed and then each additional line would be
+        //the actual countdown.  It works so ¯\_(ツ)_/¯ Praise the Omnissiah
+        setTimeout(() => {
+            document.getElementById("CountdownDisplay").innerHTML = "We have liftoff!";
+            countdown = countdown -1;
+        }, timeout)
+        timeout = timeout - 1000;
+        //We ard going to be looping this ten times...round one
+        setTimeout(() => {
+            document.getElementById("CountdownDisplay").innerHTML = countdown;
+            countdown = countdown -1;
+        }, timeout)
+        timeout = timeout - 1000;
+        //We ard going to be looping this ten times...round two
+        setTimeout(() => {
+            document.getElementById("CountdownDisplay").innerHTML = countdown;
+            countdown = countdown -1;
+        }, timeout)
+        timeout = timeout - 1000;
+        //We ard going to be looping this ten times...round three
+        setTimeout(() => {
+            document.getElementById("CountdownDisplay").innerHTML = countdown;
+            countdown = countdown -1;
+        }, timeout)
+        timeout = timeout - 1000;
+        //We ard going to be looping this ten times...round four
+        setTimeout(() => {
+            document.getElementById("CountdownDisplay").innerHTML = countdown;
+            countdown = countdown -1;
+        }, timeout)
+        timeout = timeout - 1000;
+        //We ard going to be looping this ten times...round five
+        setTimeout(() => {
+            document.getElementById("CountdownDisplay").innerHTML = countdown;
+            countdown = countdown -1;
+        }, timeout)
+        timeout = timeout - 1000;
+        //We ard going to be looping this ten times...round six
+        setTimeout(() => {
+            document.getElementById("CountdownDisplay").innerHTML = countdown;
+            countdown = countdown -1;
+        }, timeout)
+        timeout = timeout - 1000;
+        //We ard going to be looping this ten times...round seven...almost there
+        setTimeout(() => {
+            document.getElementById("CountdownDisplay").innerHTML = countdown;
+            countdown = countdown -1;
+        }, timeout)
+        timeout = timeout - 1000;
+        //We ard going to be looping this ten times...round eight...bet you wish this was loop function
+        setTimeout(() => {
+            document.getElementById("CountdownDisplay").innerHTML = countdown;
+            countdown = countdown -1;
+        }, timeout)
+        timeout = timeout - 1000;
+        //We ard going to be looping this ten times...round nine...so close
+        setTimeout(() => {
+            document.getElementById("CountdownDisplay").innerHTML = countdown;
+            countdown = countdown -1;
+        }, timeout)
+        timeout = timeout - 1000;
+        //We ard going to be looping this ten times...round ten...and there we have it
+        setTimeout(() => {
+            document.getElementById("CountdownDisplay").innerHTML = countdown;
+            countdown = countdown -1;
+        }, timeout)
+        timeout = timeout - 1000;
+        }
+
+
+    
+
+    </script>
+
+</head>
+<body>
+    <h1>UAT Space Program</h1>
+    <p>The journey to the new frontier!</p>
+    <!--This is where we are placing the button to make the magic happen-->
+        <h2>Countdown</h2><button type="button" onclick="StartTheCountdown()">Start Countdown</button>
+    <p id="CountdownDisplay">10</p>
+</body>
+</html>
